@@ -52,13 +52,13 @@ export const RepoCard: React.FC<RepoCardProps> = ({ repo, token }) => {
     backgroundColor: '#fff'
   };
 
-  if (loading) {
-    return (
-      <div style={cardStyle} dangerouslySetInnerHTML={{ 
-        __html: `Loading data for: <strong>${repo}</strong>...` 
-      }} />
-    );
-  }
+if (loading) {
+  return (
+    <div style={cardStyle}>
+      Loading data for: <strong>{repo}</strong>...
+    </div>
+  );
+}
 
   if (error) {
     return <div style={{ ...cardStyle, color: 'red' }}>Error: {error}</div>;
