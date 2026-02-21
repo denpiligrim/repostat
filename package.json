@@ -1,0 +1,33 @@
+{
+  "name": "repostat",
+  "version": "1.0.0",
+  "description": "A simple React component to fetch and display GitHub repository info",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denpiligrim/repostat"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "github",
+    "card",
+    "component"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
